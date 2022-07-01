@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- <main>
+    <section class="container">
+        <article class="get-weather-details">
+            <h1>Weather Application</h1>
+            <form action="" id="form">
+                <div class="form-control">
+                    <label for="country">Country : </label>
+                    <br>
+                    <input type="text" name="" id="country">
+                </div>
+                <div class="form-control">
+                    <label for="city">City : </label>
+                    <br>
+                    <input type="text" name="" id="city">
+                </div>
+            </form>
+        </article>
+        <article class="weather-info">
+            <h1>City Name</h1>
+            <img src="" alt="">
+            <ul>
+                <li>Temp:</li>
+                <li>Pressure:</li>
+                <li>Humidity:</li>
+            </ul>
+        </article>
+    </section>
+    </main> -->
+
+
+    <body>
+        <div class="container">
+          <div class="jumbotron">
+            <h1 class="text-center">Welcome to Weather Application</h1>
+    
+            <p class="text-muted text-center">
+              Now you can search weather of your city
+            </p>
+            <div id="messageWrapper">
+            </div>
+    
+            <div class="w-form">
+              <form id="form">
+                <div class="form-group">
+                  <label for="country">Country</label>
+    
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="country"
+                    placeholder="type your country to get your weather"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >try your country first tow word for Ex:"BD"</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    aria-describedby="emailHelp"
+                    placeholder="type your city to get your weather"
+                  />
+                </div>
+    
+                <button type="submit" class="btn btn-primary" id="button">
+                  Get Weather
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="card">
+                <div class="card-header text-center" id="w-city">Pabna</div>
+    
+                <ul class="list-group">
+                  <li class="list-group-item text-center">
+                    <span class="d-block">
+                      <img id="w-icon" >
+                    </span>
+                    <span id="w-feel"></span>
+                  </li>
+    
+                  <li class="list-group-item" id="w-temp"></li>
+                  <li class="list-group-item" id="w-pressure"></li>
+                  <li class="list-group-item" id="w-humidity"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> 
+  </body>
+</html>
